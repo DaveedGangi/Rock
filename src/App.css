@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Div {
+  display: flex;
+  width: 600px;
+  height: 135px;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid white;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 12px;
+  color: #ffffff;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  font-family: Bree-Serif;
+}
+.ScoreCard {
+  background-color: antiquewhite;
+  color: black;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.Bg {
+  background-color: #223a5f;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  height: 100vh;
+}
+
+.ImageCards {
+  height: 150px;
+  border: 0px;
+}
+.CardImageButtons {
+  border-radius: 0px;
+  margin: 12px;
+  border: 0px;
+  cursor: pointer;
+
+  width: 200px;
+  outline: none;
+  background-color: #223a5f;
+}
+
+.ShownImage {
+  height: 500px;
+}
+
+.buttonRules {
+  text-align: right;
+  width: 1200px;
+  padding-top: 120px;
+}
+
+.buttonClose {
+  text-align: right;
+  background-color: #ffffff;
+}
+.ShownImageBg {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  background-color: #ffffff;
+}
+.ClosingLogo {
+  cursor: pointer;
+}
+.RulesButton {
+  cursor: pointer;
+}
+
+.resultContains {
+  display: flex;
+  background-color: #223a5f;
+  width: 550px;
+  height: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+.PlayAgain {
+  text-align: center;
+}
+.PlayAgainButton {
+  font-family: Bree-Serif;
+  height: 37px;
+  width: 140px;
+  border-radius: 12px;
+  border: 0px;
+  cursor: pointer;
+}
+.YOU {
+  padding-left: 33px;
+}

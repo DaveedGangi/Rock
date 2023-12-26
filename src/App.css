@@ -28,11 +28,18 @@ body {
 }
 .ScoreCard {
   background-color: antiquewhite;
-  color: black;
+  color: #223a5f;
   width: 200px;
   height: 100px;
   text-align: center;
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .Bg {
@@ -41,12 +48,17 @@ body {
   flex-direction: column;
 
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  font-family: Roboto;
+  padding: 12px;
 }
 
 .ImageCards {
   height: 150px;
   border: 0px;
+}
+.ImageCard {
+  height: 150px;
 }
 .CardImageButtons {
   border-radius: 0px;
@@ -64,9 +76,22 @@ body {
 }
 
 .buttonRules {
-  text-align: right;
-  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   padding-top: 120px;
+  padding-bottom: 130px;
+  margin-right: 22px;
+  width: 1200px;
+}
+.RulesButton {
+  border-radius: 7px;
+  border: 0px;
+  width: 100px;
+  height: 33px;
+  font-family: Bree-Serif;
+  color: #223a5f;
+  font-weight: 600;
 }
 
 .buttonClose {
@@ -78,6 +103,10 @@ body {
   padding-right: 24px;
   padding-bottom: 24px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .ClosingLogo {
   cursor: pointer;
@@ -107,7 +136,87 @@ body {
   border-radius: 12px;
   border: 0px;
   cursor: pointer;
+  color: #223a5f;
+  font-size: 15px;
+  font-weight: 600;
 }
 .YOU {
   padding-left: 33px;
+}
+
+.result-shown {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 24px;
+}
+.score {
+  font-family: 'Roboto';
+}
+
+.BreeSerif {
+  font-family: Bree-Serif;
+  width: 100px;
+  flex-wrap: wrap;
+  font-size: 26px;
+}
+.bgButton {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.buttonCards {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .Div {
+    width: 360px;
+  }
+  .resultContains {
+    width: 350px;
+  }
+  .CardImageButtons {
+    width: 110px;
+  }
+  .ImageCards {
+    height: 100px;
+  }
+  .ImageCard {
+    height: 100px;
+    padding-left: 33px;
+  }
+  .resultsContains {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .resultContains {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .buttonRules {
+    width: 340px;
+    padding-top: 360px;
+    padding-bottom: 200px;
+  }
+  .ShownImage {
+    height: 250px;
+  }
+  .ScoreCard {
+    margin-top: 18px;
+    margin-left: 22px;
+  }
+  .Bg {
+    padding: 22px;
+  }
+  .ShownImageBg {
+    text-align: center;
+  }
+  .bgButton {
+    width: 160px;
+  }
 }

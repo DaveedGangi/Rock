@@ -4,6 +4,8 @@ import Popup from 'reactjs-popup'
 
 import {RiCloseLine} from 'react-icons/ri'
 
+import {Para, Image, Bg} from './styledComponent'
+
 import './App.css'
 
 const choicesList = [
@@ -166,7 +168,7 @@ class App extends Component {
     console.log(imageOpponent)
 
     return (
-      <div className="Bg">
+      <Bg>
         <div className="Div">
           <div>
             <h1 className="BreeSerif">Rock Paper Scissors</h1>
@@ -174,7 +176,7 @@ class App extends Component {
           <div>
             <div className="ScoreCard">
               <p>Score</p>
-              <p className="score">{score}</p>
+              <Para className="score">{score}</Para>
             </div>
           </div>
         </div>
@@ -185,19 +187,11 @@ class App extends Component {
               <div>
                 <h1 className="YOU">YOU</h1>
 
-                <img
-                  className="ImageCard"
-                  src={imageShownOnComparisonOne}
-                  alt="your choice"
-                />
+                <Image src={imageShownOnComparisonOne} alt="your choice" />
               </div>
               <div>
                 <h1 className="OPPONENT">OPPONENT</h1>
-                <img
-                  className="ImageCard"
-                  src={imageOpponent.imageUrl}
-                  alt="opponent choice"
-                />
+                <Image src={imageOpponent.imageUrl} alt="opponent choice" />
               </div>
             </div>
 
@@ -268,7 +262,7 @@ class App extends Component {
             )}
           </Popup>
         </div>
-      </div>
+      </Bg>
     )
   }
 }
